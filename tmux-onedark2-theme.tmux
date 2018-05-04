@@ -3,6 +3,7 @@ onedark_black="#282c34"
 onedark_blue="#61afef"
 onedark_yellow="#e5c07b"
 onedark_red="#e06c75"
+onedark_purple="#c678dd"
 onedark_white="#aab2bf"
 onedark_green="#98c379"
 onedark_visual_grey="#3e4452"
@@ -76,8 +77,10 @@ set "@prefix_highlight_copy_mode_attr" "fg=$onedark_black,bg=$onedark_green"
 set "@prefix_highlight_output_prefix" "  "
 
 set "@tmux_mode_indicator_background" "$onedark_blue"
-set "@tmux_mode_indicator_right_edge_character_fg" "$onedark_green"
+set "@tmux_mode_indicator_right_edge_character_fg" "$onedark_visual_grey"
 set "@tmux_mode_indicator_left_edge_character_bg" "$onedark_visual_grey"
+set "@tmux_mode_indicator_left_edge_character" ""
+set "@tmux_mode_indicator_right_edge_character" ""
 
 status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
